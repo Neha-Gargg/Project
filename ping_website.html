@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Website</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!--Navbar starts here-->
+    <nav class="bg-blue-300 justify-between flex mx-[100px] mt-3 rounded-md mb-3 border-2 border-black">
+        <div class=" flex pl-3  bg-blue-300 rounded-xl ">
+            <div class="font-semibold  text-xl pl-3 bg-blue-300 mr-2">Country :</div>
+            <img class="h-6 w-6 bg-blue-300 pt-1" src="https://cdn.icon-icons.com/icons2/1531/PNG/96/3253496-flag-india-icon_106777.png" alt="">
+            <div class="font-semibold  text-xl pl-3 bg-blue-300">INDIA</div>
+        </div>
+        <div><a class="pr-7 cursor-pointer font-semibold" title="your ip address info" href="/ip-info?host=103.48.197.6">IP Address: <span class="text-white hover:text-blue-700 underline">103.48.197.6</span></a></div>
+        </div>
+    </nav>
+     <!--Navbar ends here-->
+
+     <div class="border-[2px] border-black rounded-md mx-[100px] ">
+        <div class="flex md:flex-row flex-col ">
+            <img class="h-[100px] w-[100px] pl-3 pt-2 " src="image.png" alt="">
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row justify-evenly items-center">
+                    <form id="pingForm" class="  flex flex-row justify-evenly items-center gap-5">
+                        <h3 class="ml-[100px] text-black mt-5 text-2xl font-semibold font-serif">Enter URL :</h3>
+                        <input class="border-1 border-black bg-gray-300 w-[500px] mt-5" type="text" name="url" id="urlInput" placeholder="  Eg-www.yourdomain.com">
+                        <button class=" border-2  w-[50px] bg-blue-200 hover:scale-125 mt-5 border-black mr-32 hover:bg-black hover:text-white" type="submit">PING</button>
+                    </form>
+                </div>
+                
+                <div id="pingResults" class="mt-5 mb-5 text-[18px] border-[1px] rounded-md ml-[100px] italic border-black bg-blue-100 px-10">
+                    <!-- Ping results will be displayed here -->
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="flex border-[2px] flex-col border-black rounded-md mx-[100px] mt-3  justify-start items-center">
+        <h1 class="text-7xl  font-serif pt-5">PING SERVER</h1>
+        <h3 class="text-[23px] text-blue-500 font-serif ">!! YOUR GATEWAY TO NETWORK EFFICIENCY !!</h3>
+        <div class="bg-blue-200 mx-10 mt-5">
+            <p class="text-black px-5 font-serif text-[20px]">The PING test checks if a web host or IP address is reachable across the Internet by sending multiple ICMP packets and listening for the replies. The PING test measures the time it takes for the packets to go from the selected testing monitoring location to the host tested. The test results display the shortest, the average and the maximum round-trip times and packet loss rate between hosts.</p>
+        </div>
+        <img class="h-[300px] w-[1000px] pt-5" src="https://cdn.prod.website-files.com/5c9200c49b1194323aff7304/65ce151bfdb30756f71bf3e9_Infogfx-01.png" alt="">
+     </div>
+
+     <footer class="flex flex-col justify-center rounded-md items-center bg-black h-[50px] mx-[100px] mt-3 ">
+        <h1 class="text-white">Made By- Akshar Consultancy Services pvt ltd</h1>
+        <h1 class="text-white">Copyright©2024</h1>
+
+     </footer>
+
+     <script src="ping.js"></script>
+</body>
+</html>
